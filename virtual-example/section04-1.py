@@ -2,6 +2,8 @@
 
 # 데이터 타입
 
+import math
+
 v_str1 = "Niceman"
 v_bool = True
 v_str2 = "Goodboy"
@@ -44,3 +46,41 @@ print(i2 // i1)
 result = f3 + i2
 print(result)
 print(type(result))
+
+
+# 형변환
+# int, float, complex(복소수)
+a = 5.
+b = 4
+c = 10
+
+print(type(a), type(b))
+result2 = a + b
+print(result2)
+
+print(int(result2))
+print(float(c))
+print(complex(3))
+
+# Bool, string 자동 형변환
+print(int(True))
+print(int('3'))
+
+
+# 단항 연산자
+y = 100
+y += 100
+
+print(y)
+
+
+#수치 연산 함수
+# https://docs.python.org/3/library/math.html
+
+print(abs(-7))
+n, m = divmod(100, 8)
+print(n, m)
+
+
+print(math.ceil(5.1))
+print(math.floor(3.875))
